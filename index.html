@@ -35,25 +35,32 @@
         <div class="cursor"></div>
       </div>
         <!-- Preloader Area Start -->
-    <div class="preloader">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
+        <div class="preloader">
+            <svg viewBox="0 0 500 500" preserveAspectRatio="none"></svg>
+                <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+            </svg>
 
-        <div class="preloader-heading">
-            <div class="load-text">
-                <span>L</span>
-                <span>O</span>
-                <span>A</span>
-                <span>D</span>
-                <span>I</span>
-                <span>N</span>
-                <span>G</span>
-            
+            <div class="preloader-heading">
+                <div class="load-text">
+                    <span>L</span>
+                    <span>O</span>
+                    <span>A</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>G</span>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Preloader Area End -->
+        <!-- Preloader Area End -->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                setTimeout(function() {
+                    document.querySelector('.preloader').style.display = 'none';
+                }, 2500); // 1 second delay
+            });
+        </script>
 
 
     <!-- start: Back To Top -->
